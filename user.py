@@ -8,7 +8,7 @@ def choose_mode():
     else:
         print('Такого режима не существует!')
         choose_mode()
-    return person
+    return person, mode
 
 
 def fill_person():
