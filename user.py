@@ -3,8 +3,7 @@ def choose_mode():
     if mode == 'запись':
         person = fill_person()
     elif mode == 'поиск':
-        pass
-        #person_surname = fill_surname()
+        person = choice_last_name()
     else:
         print('Такого режима не существует!')
         choose_mode()
@@ -18,6 +17,8 @@ def fill_person():
     phone = input('Введите телефон: ')
     return surname, name, second_name, phone
 
-#def fill_surname():
+def choice_last_name():
+    surname = input('Введите фамилию для поиска: ')
+    return surname
     
     
